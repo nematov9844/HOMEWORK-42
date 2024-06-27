@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+</head>
+
+<body class="max-w-1440 mx-auto flex justify-center p-5 flex-col">
+<header class="justify-between sidebar sticky top-0 left-0 nr__cont mx-auto my-0">
+    <nav class="flex items-center justify-between">
+        <div>
+            <a href="./index.html" class="text-2xl md:text-4xl font-semibold font-sans">Tripma</a>
+        </div>
+        <ul class="flex text-blue-700 flex-col-reverse md:flex-row fixed top-0 -right-full w-1/2 h-lvh items-start px-4 justify-center bg-gray-300 md:static gap-2">
+           
+         
+            <li><a href="#" class="text-xs md:text-2xl font-semibold hover:text-gray-600 text-shadow-md  shadow-red-600  bg-transparent">Flights</a></li>
+            <li><a href="#" class="text-xs md:text-2xl font-semibold hover:text-gray-600 text-shadow-md  shadow-red-600  bg-transparent">Hotels</a></li>
+            <li><a href="#" class="text-xs md:text-2xl font-semibold hover:text-gray-600 text-shadow-md  shadow-red-600  bg-transparent">Packages</a></li>
+            <li><a href="#" class="text-xs md:text-2xl font-semibold hover:text-gray-600 text-shadow-md  shadow-red-600  bg-transparent">Sign in</a></li>
+            <button class="bg-red-700 p-6 text-6xl text-black"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="bg-blue-600 w-20 h-10 rounded text-white">Sign up</button>
+        </ul>
+        <div class=" md:hidden">
+            <button class="toggle text-black bg-slate-500 p-3"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+    </nav>
+</header>
+<script src="./js/app.js"></script>
+</body>
+
+</html>
+<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->

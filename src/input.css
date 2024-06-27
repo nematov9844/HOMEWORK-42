@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nr__cont{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.active{
+    ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
+header {
+    ul{
+        position: fixed;
+        right: -100%;
+        top: 0;
+    }
+}
