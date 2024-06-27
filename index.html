@@ -11,28 +11,476 @@
 </head>
 
 <body class="max-w-1440 mx-auto flex justify-center p-5 flex-col">
-<header class="justify-between sidebar sticky top-0 left-0 nr__cont mx-auto my-0">
-    <nav class="flex items-center justify-between">
-        <div>
-            <a href="./index.html" class="text-2xl md:text-4xl font-semibold font-sans">Tripma</a>
+    <header class="justify-between sidebar sticky top-0 left-0 nr__cont mx-auto my-0">
+        <nav class="flex items-center justify-between">
+            <div>
+                <a href="./index.html"
+                    class="text-2xl md:text-4xl text-blue-500 font-semibold font-sans flex justify-center items-center">Tripma</a>
+            </div>
+            <ul
+                class="flex  flex-col-reverse md:flex-row fixed top-0 -right-full w-1/2 h-lvh md:w-auto md:h-auto md:bg-transparent items-start md:items-center px-4 justify-center bg-gray-300 md:static md:gap-2">
+
+
+                <li><a href="#"
+                        class="text-xs md:text-2xl font-semibold  text-shadow-md   bg-transparent  p-1 rounded hover:text-blue-300  text-blue-700">Flights</a>
+                </li>
+                <li><a href="#"
+                        class="text-xs md:text-2xl font-semibold  text-shadow-md   bg-transparent  p-1 rounded hover:text-blue-300  text-blue-700">Hotels</a>
+                </li>
+                <li><a href="#"
+                        class="text-xs md:text-2xl font-semibold  text-shadow-md   bg-transparent  p-1 rounded hover:text-blue-300  text-blue-700">Packages</a>
+                </li>
+                <li><a href="#"
+                        class="text-xs md:text-2xl font-semibold  text-shadow-md   bg-transparent  p-1 rounded hover:text-blue-300  text-blue-700">Sign
+                        in</a></li>
+                <button
+                    class="toggle2 top-4 left-4 transition ease-inh absolute text-xl px-1 rounded text-blue-500 md:hidden"><i
+                        class="fa-solid fa-angle-left"></i></button>
+                <button class="bg-blue-600 w-20 h-10 rounded text-white">Sign up</button>
+            </ul>
+            <div class=" md:hidden">
+                <button class="toggle text-blue-500 bg-slate-300 w-6 rounded"><i
+                        class="fa-solid fa-bars-staggered"></i></button>
+            </div>
+        </nav>
+    </header>
+      <section class="my-5">
+        <div class="flex gap-2">
+            <input placeholder="Enter your name" class="rounded border-blue-500 border-2 outline-none bg-transparent px-6 py-2 " type="text">
+            <input placeholder="Enter your name" class="rounded border-blue-500 border-2 outline-none bg-transparent px-6 py-2 " type="text">
+            <input placeholder="Enter your name" class="rounded border-blue-500 border-2 outline-none bg-transparent px-6 py-2 " type="text">
+            <input placeholder="Enter your name" class="rounded border-blue-500 border-2 outline-none bg-transparent px-6 py-2 " type="text">
+            <button class="bg-blue-500 border-blue-500 border-2 w-20 h-10 rounded text-white" >Search</buttonc>
         </div>
-        <ul class="flex text-blue-700 flex-col-reverse md:flex-row fixed top-0 -right-full w-1/2 h-lvh items-start px-4 justify-center bg-gray-300 md:static gap-2">
-           
-         
-            <li><a href="#" class="text-xs md:text-2xl font-semibold hover:text-gray-600 text-shadow-md  shadow-red-600  bg-transparent">Flights</a></li>
-            <li><a href="#" class="text-xs md:text-2xl font-semibold hover:text-gray-600 text-shadow-md  shadow-red-600  bg-transparent">Hotels</a></li>
-            <li><a href="#" class="text-xs md:text-2xl font-semibold hover:text-gray-600 text-shadow-md  shadow-red-600  bg-transparent">Packages</a></li>
-            <li><a href="#" class="text-xs md:text-2xl font-semibold hover:text-gray-600 text-shadow-md  shadow-red-600  bg-transparent">Sign in</a></li>
-            <button class="bg-red-700 p-6 text-6xl text-black"><i class="fa-solid fa-angle-left"></i></button>
-            <button class="bg-blue-600 w-20 h-10 rounded text-white">Sign up</button>
-        </ul>
-        <div class=" md:hidden">
-            <button class="toggle text-black bg-slate-500 p-3"><i class="fa-solid fa-bars-staggered"></i></button>
+      </section>
+    <main>
+        <section class="flex flex-col gap-5">
+            <div>
+                <h1>Choose a <span class="text-blue-500">departing</span> flight</h1>
+            </div>
+            <div class="all flex flex-col md:flex-row  gap-5">
+                <div class="tb md:w-4/6">
+                    <div class="card flex w-full gap-3">
+                        <div class="img w-10 md:w-16">
+                            <img src="https://s3-alpha-sig.figma.com/img/183e/cad2/d9ae9ac40c79bcebdc1b8f3f845c7f6b?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DGlgfpQnyMG0bL1Ixpktnr05OhkEyzPBwsPiYohIgCoVYrHPU5RBAga1vdD0~V~W3Hsky6MhEilF7QdaEqR9z1~JC3MhexnnqVn2Buqr8nXMi5k-c7zuVvSCPgm42ldJ~1K1smWd039Ca3MlSC~FFHJK~TKhlDMSARGHTggI8okjdhdS~9itQa0bFxyZ5oO7T9TJmNaF-MgVkMpI-2aYGfQtz6d2RA6eqLghTH~V-pQcG2LAzYoHshYkpGH~kqFqNz~TFjXB2Uu72xfi6s1bvs9ghJsH75QCF7LbXUyMC0xBrHIfPfasQKIF7AikxOtWRTgDH-G5EH4982cHkm-ixQ__"
+                                alt="">
+                        </div>
+                        <div class="desc  grid grid-cols-2 md:grid-cols-1  w-full">
+                            <div class=" grid grid-cols-1   sm:grid-cols-4">
+                                <h1 class="text-xs md:text-xl">16h 45m</h1>
+                                <h1 class="text-xs md:text-xl">7:00AM - 4:15PM</h1>
+                                <h1 class="text-xs md:text-xl">1 stop</h1>
+                                <h1 class="text-xs md:text-xl">$624</h1>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-4">
+                                <h1 class="text-gray-600  md:text-xl text-xs">Hawaiian Airlines</h1>
+                                <h1></h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">2h 45m in HNL</h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">round trip</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card flex w-full gap-3">
+                        <div class="img w-10 md:w-16">
+                            <img src="https://s3-alpha-sig.figma.com/img/77d2/b07c/0e409890ded89a5ca22dc82431d22db6?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dgvT7UdXBASxgXj01hALEj9UFbEIFVndB2kyZQv1KgcEFKCK8PSyjqwLq5VOpBPxrh8vA2OS7UL~Xhbo9gl7P~mjby23oNzFXk9GUmVq1EdPltIwbSohXdrXl3HU7w4RhxYofPQkXkfKuc0zI1fm33YO-9FI00jiSXXWL9DWbUiivI37aftbUwwQUZ435RTCxVoWFvVXG9dkuHppGKhU6qvb28v4TDOekrhj~IT1D7Fl8ftIFt5rJCSB30inep~e2mRt3h~T65YWCjAESfJdjF6DPlt2I2U7sL~jp~bo9YBysJn5e95idtwb2poYw~1Dh4TLLna6FW1srF2YB1Yc9A__"
+                                alt="">
+                        </div>
+                        <div class="desc  grid grid-cols-2 md:grid-cols-1  w-full">
+                            <div class=" grid grid-cols-1   sm:grid-cols-4">
+                                <h1 class="text-xs md:text-xl">16h 45m</h1>
+                                <h1 class="text-xs md:text-xl">7:00AM - 4:15PM</h1>
+                                <h1 class="text-xs md:text-xl">1 stop</h1>
+                                <h1 class="text-xs md:text-xl">$624</h1>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-4">
+                                <h1 class="text-gray-600  md:text-xl text-xs">Hawaiian Airlines</h1>
+                                <h1></h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">2h 45m in HNL</h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">round trip</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card flex w-full gap-3">
+                        <div class="img w-10 md:w-16">
+                            <img src="https://s3-alpha-sig.figma.com/img/183e/cad2/d9ae9ac40c79bcebdc1b8f3f845c7f6b?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DGlgfpQnyMG0bL1Ixpktnr05OhkEyzPBwsPiYohIgCoVYrHPU5RBAga1vdD0~V~W3Hsky6MhEilF7QdaEqR9z1~JC3MhexnnqVn2Buqr8nXMi5k-c7zuVvSCPgm42ldJ~1K1smWd039Ca3MlSC~FFHJK~TKhlDMSARGHTggI8okjdhdS~9itQa0bFxyZ5oO7T9TJmNaF-MgVkMpI-2aYGfQtz6d2RA6eqLghTH~V-pQcG2LAzYoHshYkpGH~kqFqNz~TFjXB2Uu72xfi6s1bvs9ghJsH75QCF7LbXUyMC0xBrHIfPfasQKIF7AikxOtWRTgDH-G5EH4982cHkm-ixQ__"
+                                alt="">
+                        </div>
+                        <div class="desc  grid grid-cols-2 md:grid-cols-1  w-full">
+                            <div class=" grid grid-cols-1   sm:grid-cols-4">
+                                <h1 class="text-xs md:text-xl">16h 45m</h1>
+                                <h1 class="text-xs md:text-xl">7:00AM - 4:15PM</h1>
+                                <h1 class="text-xs md:text-xl">1 stop</h1>
+                                <h1 class="text-xs md:text-xl">$624</h1>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-4">
+                                <h1 class="text-gray-600  md:text-xl text-xs">Hawaiian Airlines</h1>
+                                <h1></h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">2h 45m in HNL</h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">round trip</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card flex w-full gap-3">
+                        <div class="img w-10 md:w-16">
+                            <img src="https://s3-alpha-sig.figma.com/img/61eb/828c/04ae522b0a6fb0e9802dec1c448f7c36?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=En~6G3TZX3bW5KyyPDEo-nWuI6cZ0dUbdmrKTVTjiyVxh-PRPMmSKfdQ8NItH~fe8M7n5gsrspAVbnBUaTpPitoZxnp5cwrowmH~GKYTaKogf1XCLMmnVsuZKtezGlL-2jcDpG0ft4czKg5~7UYmCMinoCodGKXhG4fA3H3EA9AC9OXsT3JFNnTaH8h384XgNKquIVKrUSuBqEzF2hcIF32-REN~E-NpFl304FCA01y5AbPnqV132cLsp91~pgkkpBPs0rsyVaE~VUuH9fujNGjr3XckvqYJrAEwDvHrH~oSlcqsA7M~GntWV-FdaukuFaYo4jUxPosslM5c3KidYg__"
+                                alt="">
+                        </div>
+                        <div class="desc  grid grid-cols-2 md:grid-cols-1  w-full">
+                            <div class=" grid grid-cols-1   sm:grid-cols-4">
+                                <h1 class="text-xs md:text-xl">16h 45m</h1>
+                                <h1 class="text-xs md:text-xl">7:00AM - 4:15PM</h1>
+                                <h1 class="text-xs md:text-xl">1 stop</h1>
+                                <h1 class="text-xs md:text-xl">$624</h1>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-4">
+                                <h1 class="text-gray-600  md:text-xl text-xs">Hawaiian Airlines</h1>
+                                <h1></h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">2h 45m in HNL</h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">round trip</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card flex w-full gap-3">
+                        <div class="img w-10 md:w-16">
+                            <img src="https://s3-alpha-sig.figma.com/img/183e/cad2/d9ae9ac40c79bcebdc1b8f3f845c7f6b?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DGlgfpQnyMG0bL1Ixpktnr05OhkEyzPBwsPiYohIgCoVYrHPU5RBAga1vdD0~V~W3Hsky6MhEilF7QdaEqR9z1~JC3MhexnnqVn2Buqr8nXMi5k-c7zuVvSCPgm42ldJ~1K1smWd039Ca3MlSC~FFHJK~TKhlDMSARGHTggI8okjdhdS~9itQa0bFxyZ5oO7T9TJmNaF-MgVkMpI-2aYGfQtz6d2RA6eqLghTH~V-pQcG2LAzYoHshYkpGH~kqFqNz~TFjXB2Uu72xfi6s1bvs9ghJsH75QCF7LbXUyMC0xBrHIfPfasQKIF7AikxOtWRTgDH-G5EH4982cHkm-ixQ__"
+                                alt="">
+                        </div>
+                        <div class="desc  grid grid-cols-2 md:grid-cols-1  w-full">
+                            <div class=" grid grid-cols-1   sm:grid-cols-4">
+                                <h1 class="text-xs md:text-xl">16h 45m</h1>
+                                <h1 class="text-xs md:text-xl">7:00AM - 4:15PM</h1>
+                                <h1 class="text-xs md:text-xl">1 stop</h1>
+                                <h1 class="text-xs md:text-xl">$624</h1>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-4">
+                                <h1 class="text-gray-600  md:text-xl text-xs">Hawaiian Airlines</h1>
+                                <h1></h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">2h 45m in HNL</h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">round trip</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card flex w-full gap-3">
+                        <div class="img w-10 md:w-16">
+                            <img src="https://s3-alpha-sig.figma.com/img/63a6/d3e5/fd895dccb53eca4e66c771bed1ffe95d?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=a40X6HoyNw4XjO~EUCu6VRaYpI0-os448T1kMUYxAsw3KR~BCvcyfTCQCZdseT7t5cG890P9736-tgg0QhruEWeIRkakGVLOIWUKc5touHQtJlbIHBSv45XDCicacmlMFHzpPXbV34GPASQyXTiAB1nfmZjbEaZFjfqQz~hod5DGAfViKDLcbTaG5-yoKMvE1tKFul~bUriBglcpizbbBkhlJaGIjrgOPMimH159Cua7jBMi1YNTxLVtRqPDXAKuz4l~3ksnE0qDl7MbPie~FNM9KrBAD1gTZZWpiCfI7sNzj7xlx41DwedOh3l9-orryxl533jrXoVZ38EkZXAZsg__"
+                                alt="">
+                        </div>
+                        <div class="desc  grid grid-cols-2 md:grid-cols-1  w-full">
+                            <div class=" grid grid-cols-1   sm:grid-cols-4">
+                                <h1 class="text-xs md:text-xl">16h 45m</h1>
+                                <h1 class="text-xs md:text-xl">7:00AM - 4:15PM</h1>
+                                <h1 class="text-xs md:text-xl">1 stop</h1>
+                                <h1 class="text-xs md:text-xl">$624</h1>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-4">
+                                <h1 class="text-gray-600  md:text-xl text-xs">Hawaiian Airlines</h1>
+                                <h1></h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">2h 45m in HNL</h1>
+                                <h1 class="text-gray-600  md:text-xl text-xs">round trip</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nr grid grid-cols-1  md:w-2/6">
+                    <div class="grid grid-cols-6 text-xs md:text-xl  ">
+                        <h1></h1>
+                        <h1>2/12</h1>
+                        <h1>2/13</h1>
+                        <h1>2/14</h1>
+                        <h1>2/15</h1>
+                        <h1>2/16</h1>
+                    </div>
+                    <div class="grid grid-cols-6 text-xs md:text-xl  ">
+                        <h1>3/7</h1>
+                        <h1 class="text-gray-500">$837</h1>
+                        <h1 class="text-gray-500">$592</h1>
+                        <h1 class="text-gray-500">$592</h1>
+                        <h1 class="text-gray-500">$1,308</h1>
+                        <h1 class="text-gray-500">$837</h1>
+                    </div>
+                    <div class="grid grid-cols-6 text-xs md:text-xl  ">
+                        <h1>3/8</h1>
+                        <h1 class="text-gray-500">$837</h1>
+                        <h1 class="text-gray-500">$592</h1>
+                        <h1 class="text-gray-500">$592</h1>
+                        <h1 class="text-gray-500">$837</h1>
+                        <h1 class="text-gray-500">$1,308</h1>
+                    </div>
+                    <div class="grid grid-cols-6 text-xs md:text-xl  ">
+                        <h1>3/9</h1>
+                        <h1 class="text-gray-500">$624</h1>
+                        <h1 class="text-gray-500">$592</h1>
+                        <h1 class="text-gray-500">$624</h1>
+                        <h1 class="text-gray-500">$592</h1>
+                        <h1 class="text-gray-500">$592</h1>
+                    </div>
+                    <div class="grid grid-cols-6 text-xs md:text-xl  ">
+                        <h1>3/10</h1>
+                        <h1 class="text-gray-500">$1,308</h1>
+                        <h1 class="text-gray-500">$624</h1>
+                        <h1 class="text-gray-500">$624</h1>
+                        <h1 class="text-gray-500">$837</h1>
+                        <h1 class="text-gray-500">$837</h1>
+                    </div>
+                    <div class="grid grid-cols-6 text-xs md:text-xl  ">
+                        <h1>3/10</h1>
+                        <h1 class="text-gray-500">$592</h1>
+                        <h1 class="text-gray-500">$624</h1>
+                        <h1 class="text-gray-500">$1,308</h1>
+                        <h1 class="text-gray-500">$837</h1>
+                        <h1 class="text-gray-500">$624</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="castimcontainer flex flex-col gap-5 md:flex-row">
+            <div class="w-[100%] flex">
+                <img class="w-full h-full object-cover" src="./img/Map.svg" alt="">
+            </div>
+            <div class="flex flex-col gap-2 md:w-[50%]">
+                <div class="flex gap-4 items-center">
+                    <p class="text-[#6E7491] font-medium text-xl">
+                        Price rating
+                    </p>
+                    <button class="p-1 bg-[#5CD6C0] rounded-lg">
+                        Buy soon
+                    </button>
+                </div>
+                <p class="text-[#6E7491] font-normal">
+                    We recommend booking soon. The average cost of this flight is $750, but could rise 18% to $885 in
+                    two weeks.
+                </p>
+                <p class="text-[#A1B0CC] font-normal ">
+                    Tripma analyzes thousands of flights, prices, and trends to ensure you get the best deal.
+                </p>
+            </div>
+        </section>
+        <section class="castimcontainer">
+            <div class="flex justify-between">
+                <h1>What <span class="text-blue-500">Tripma</span> users are saying</h1>
+                <div class="flex gap-2 items-center">
+                    <p>
+                        ALL
+                    </p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class=" my-12 w-full flex flex-col gap-3 md:flex-row justify-between">
+                <br><br><br>
+                <div class="w-full bg-white border border-gray rounded-lg ">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100%]" src="./Img/Tripma (1)/card/Card/image.svg" alt="" />
+                    </a>
+                    <div class="p-1">
+                        <h5 class="px-5">Stay among the atolls in Maldives</h5>
+                        <p class=" font-normal text-gray-700 dark:text-gray-400 px-5"> From the 2nd century AD, the
+                            islands were known as the 'Money Isles' due to the abundance of cowry shells, a currency of
+                            the early ages.</p>
+                    </div>
+                </div>
+                <div class="w-full bg-white border border-gray rounded-lg ">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100%]" src="./Img/Tripma/card/Card/image.svg" alt="" />
+                    </a>
+                    <div class="p-1">
+                        <h5 class="px-5">Stay among the atolls in Maldives</h5>
+                        <p class=" font-normal text-gray-700 dark:text-gray-400 px-5"> From the 2nd century AD, the
+                            islands were known as the 'Money Isles' due to the abundance of cowry shells, a currency of
+                            the early ages.</p>
+                    </div>
+                </div>
+                <div class="w-full bg-white border border-gray rounded-lg ">
+                    <a href="#">
+                        <img class="rounded-t-lg w-[100%]" src="./Img/Tripma/card/Card/image.svg" alt="" />
+                    </a>
+                    <div class="p-1">
+                        <h5 class="px-5">Stay among the atolls in Maldives</h5>
+                        <p class=" font-normal text-gray-700 dark:text-gray-400 px-5"> From the 2nd century AD, the
+                            islands were known as the 'Money Isles' due to the abundance of cowry shells, a currency of
+                            the early ages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="castimcontainer">
+            <div class="flex justify-between">
+                <h1>What <span class="text-blue-500">Tripma</span> users are saying</h1>
+                <div class="flex gap-2 items-center">
+                    <p>
+                        ALL
+                    </p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="w-[100%] flex flex-col gap-4">
+                <div class="w-full flex flex-col gap-3 md:flex-row justify-between">
+                    <div class="w-full bg-white  ">
+                        <a href="#">
+                            <img class="rounded-t-lg w-[100%]" src="./Img/Tripma (2)/card/Card/image.svg" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <div class="flex justify-between">
+                                <p>The Bund, Shanghai</p>
+                                <p>
+                                    $598
+                                </p>
+                            </div>
+                            <p class=" font-normal text-gray-700 dark:text-gray-400">China’s most international city</p>
+
+                        </div>
+                    </div>
+                    <div class="w-full bg-white  ">
+                        <a href="#">
+                            <img class="rounded-t-lg w-[100%]" src="./Img/Tripma (3)/card/Card/image.svg" alt="" />
+                        </a>
+                        <div class="p-1">
+                            <div class="flex justify-between">
+                                <p>The Bund, Shanghai</p>
+                                <p>
+                                    $598
+                                </p>
+                            </div>
+                            <p class=" font-normal text-gray-700 dark:text-gray-400">China’s most international city</p>
+
+                        </div>
+                    </div>
+                    <div class="w-full bg-white  ">
+                        <a href="#">
+                            <img class="rounded-t-lg w-[100%]" src="./Img/Tripma (4)/card/Card/image.svg" alt="" />
+                        </a>
+
+                        <div class="p-1">
+                            <div class="flex justify-between">
+                                <p>The Bund, Shanghai</p>
+                                <p>
+                                    $598
+                                </p>
+                            </div>
+                            <p class=" font-normal text-gray-700 dark:text-gray-400">China’s most international city</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8">
+                    <img class="h-20" src="./img/logo.svg" alt="logo">
+                </div>
+                <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900">About </h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">About Tripma</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">How it works</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Press</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Forum</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900">Partner with us</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Partnership programs</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Affiliate program</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Connectivity partners</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Promotions and events</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Integrations</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Community</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Loyalty program</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900">Support</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Help Center</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Terms of service</a>
+                                </li>
+                                <li>
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Trust and safety</a>
+                                </li>
+                                <li>
+
+                                    <a href="#" class=" text-gray-600 hover:text-gray-900">Accessibility</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-10 md:mt-0">
+                            <h3 class="text-sm font-semibold leading-6 text-gray-900">Get the app</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                                <li>
+                                    <a href="#" class="text-gray-600 hover:text-gray-900">Tripma for Android</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-600 hover:text-gray-900">Tripma for iOS</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-600 hover:text-gray-900">Mobile site</a>
+                                </li>
+                                <img src="./img/Tripma/column/link/app store.svg" alt="">
+                                <img src="./img/Tripma (1)/column/link/link/google play.svg" alt="">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t flex justify-between border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div>
+                    <p class="text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-    </nav>
-</header>
-<script src="./js/app.js"></script>
+    </footer>
+    </main>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
-<!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
